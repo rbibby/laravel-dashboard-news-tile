@@ -1,8 +1,8 @@
 # NewsApi.org Laravel Dashboard Tile
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/:vendor/:package_name.svg?style=flat-square)](https://packagist.org/packages/:vendor/:package_name)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/:vendor/:package_name/run-tests?label=tests)](https://github.com/:vendor/:package_name/actions?query=workflow%3Arun-tests+branch%3Amaster)
-[![Total Downloads](https://img.shields.io/packagist/dt/:vendor/:package_name.svg?style=flat-square)](https://packagist.org/packages/:vendor/:package_name)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/rbibby/laravel-dashboard-news-tile.svg?style=flat-square)](https://packagist.org/packages/rbibby/laravel-dashboard-news-tile)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/rbibby/laravel-dashboard-news-tile/run-tests?label=tests)](https://github.com/rbibby/laravel-dashboard-news-tile/actions?query=workflow%3Arun-tests+branch%3Amaster)
+[![Total Downloads](https://img.shields.io/packagist/dt/rbibby/laravel-dashboard-news-tile.svg?style=flat-square)](https://packagist.org/packages/rbibby/laravel-dashboard-news-tile)
 
 Displays latest news on your Laravel Dashboard using newsapi.org
 
