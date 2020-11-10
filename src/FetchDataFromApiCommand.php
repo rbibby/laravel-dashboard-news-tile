@@ -19,7 +19,7 @@ class FetchDataFromApiCommand extends Command
             'Authorization' => config('dashboard.tiles.news.api-key'),
         ])->get('https://newsapi.org/v2/top-headlines?' . http_build_query([
             'country' => config('dashboard.tiles.news.country-code'),
-            'totalResults' => config('dashboard.tiles.news.total-results', 5),
+            'pageSize' => config('dashboard.tiles.news.number-of-articles', 5),
         ]))->json();
 
         NewsStore::make()->setData($newsArticles);
