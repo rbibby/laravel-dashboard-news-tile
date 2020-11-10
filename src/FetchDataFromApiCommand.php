@@ -1,22 +1,28 @@
 <?php
 
-namespace Vendor\MyTile;
+namespace RBibby\NewsTile;
 
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\Http;
 
 class FetchDataFromApiCommand extends Command
 {
-    protected $signature = 'dashboard:fetch-data-from-xxx-api';
+    protected $signature = 'dashboard:fetch-data-from-news-api';
 
-    protected $description = 'Fetch data for tile';
+    protected $description = 'Fetch data for news tile';
 
-    public function handle(VeloApi $velo)
+    public function handle()
     {
-        $this->info('Fetching Velo stations...');
+        $this->info('Fetching latest news...');
 
-        $myData = Http::get($endpoint)->json();
+        $newsArticles = Http::withHeaders([
+            'Authorization' => config('dashboard.tiles.news.api-key'),
+        ])->get('https://newsapi.org/v2/top-headlines?' . http_build_query([
+            'country' => config('dashboard.tiles.news.country-code'),
+            'totalResults' => config('dashboard.tiles.news.total-results', 5),
+        ]))->json();
 
-        MyStore::make()->setData($myData);
+        NewsStore::make()->setData($newsArticles);
 
         $this->info('All done!');
     }

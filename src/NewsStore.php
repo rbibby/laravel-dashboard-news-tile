@@ -1,10 +1,10 @@
 <?php
 
-namespace Vendor\MyTile;
+namespace RBibby\NewsTile;
 
 use Spatie\Dashboard\Models\Tile;
 
-class MyStore
+class NewsStore
 {
     private Tile $tile;
 
@@ -15,7 +15,7 @@ class MyStore
 
     public function __construct()
     {
-        $this->tile = Tile::firstOrCreateForName("myTileName");
+        $this->tile = Tile::firstOrCreateForName("newsTileName");
     }
 
     public function setData(array $data): self
@@ -28,5 +28,10 @@ class MyStore
     public function getData(): array
     {
         return$this->tile->getData('key') ?? [];
+    }
+
+    public function artiles(): array
+    {
+        return $this->tile->getData('articles') ?? [];
     }
 }
