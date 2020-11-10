@@ -22,7 +22,7 @@ class FetchDataFromApiCommand extends Command
             'pageSize' => config('dashboard.tiles.news.number-of-articles', 5),
         ]))->json();
 
-        NewsStore::make()->setData($newsArticles);
+        NewsStore::make()->setArticles($newsArticles);
 
         $this->info('All done!');
     }

@@ -18,19 +18,14 @@ class NewsStore
         $this->tile = Tile::firstOrCreateForName("news");
     }
 
-    public function setData(array $data): self
+    public function setArticles(array $data): self
     {
-        $this->tile->putData('key', $data);
+        $this->tile->putData('articles', $data);
 
         return $this;
     }
 
-    public function getData(): array
-    {
-        return$this->tile->getData('key') ?? [];
-    }
-
-    public function articles(): array
+    public function getArticles(): array
     {
         return $this->tile->getData('articles') ?? [];
     }

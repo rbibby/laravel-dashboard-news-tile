@@ -17,7 +17,7 @@ class NewsTileComponent extends Component
     public function render()
     {
         return view('dashboard-news-tile::tile', [
-            'articles' => NewsStore::make()->articles(),
+            'articles' => NewsStore::make()->getArticles(),
             'refreshIntervalInSeconds' => config('dashboard.tiles.news.refresh_interval_in_seconds') ?? 60,
         ]);
     }
