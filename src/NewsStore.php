@@ -15,7 +15,7 @@ class NewsStore
 
     public function __construct()
     {
-        $this->tile = Tile::firstOrCreateForName("newsTileName");
+        $this->tile = Tile::firstOrCreateForName("news");
     }
 
     public function setData(array $data): self
@@ -30,7 +30,7 @@ class NewsStore
         return$this->tile->getData('key') ?? [];
     }
 
-    public function artiles(): array
+    public function articles(): array
     {
         return $this->tile->getData('articles') ?? [];
     }
