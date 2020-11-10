@@ -46,7 +46,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\MyTile\\MyTileServiceProvider"
+                "RBibby\\NewsTile\\NewsTileServiceProvider"
             ]
         }
     },
