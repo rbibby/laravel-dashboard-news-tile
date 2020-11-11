@@ -1,8 +1,8 @@
 # NewsApi.org Laravel Dashboard Tile
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/rbibby/laravel-dashboard-news-tile.svg?style=flat-square)](https://packagist.org/packages/rbibby/laravel-dashboard-news-tile)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/rbibby/laravel-dashboard-news-tile/run-tests?label=tests)](https://github.com/rbibby/laravel-dashboard-news-tile/actions?query=workflow%3Arun-tests+branch%3Amaster)
-[![Total Downloads](https://img.shields.io/packagist/dt/rbibby/laravel-dashboard-news-tile.svg?style=flat-square)](https://packagist.org/packages/rbibby/laravel-dashboard-news-tile)
+![Packagist Version](https://img.shields.io/packagist/v/rbibby/laravel-dashboard-news-tile?color=%234299E1&style=for-the-badge)
+[![GitHub license](https://img.shields.io/github/license/rbibby/laravel-dashboard-news-tile?color=%234299E1&style=for-the-badge)](https://github.com/rbibby/laravel-dashboard-news-tile/blob/master/LICENCE)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/rbibby/laravel-dashboard-news-tile/Run%20tests?color=4299E1&style=for-the-badge)
 
 [![Buy us a tree](https://img.shields.io/badge/Treeware-%F0%9F%8C%B3-lightgreen?style=for-the-badge)](https://plant.treeware.earth/rbibby/laravel-dashboard-news-tile)
 
